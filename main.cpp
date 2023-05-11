@@ -46,9 +46,9 @@ int main(int argc, const char * argv[]) {
         std::cerr << "Invalid operation" << std::endl;
         return 1;
     }
-
-    if (target_value < 6000) {
-        target_value = 6000;
+    int f_percent = max_brightness_value * 0.05;
+    if (target_value < f_percent) {
+        target_value = f_percent;
     } else if (target_value > max_brightness_value) {
         target_value = max_brightness_value;
     }
