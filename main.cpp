@@ -6,7 +6,7 @@ int main(int argc, const char * argv[]) {
 
     std::string filename;
     std::string operation;
-    std::string brightness_level = "100";
+    std::string brightness_level;
 
     if (argc < 3 || argc > 4) {
         std::cout << "Usage: ./brightness <filename> [sum|set|minus|get] <brightness-level%>" << std::endl;
